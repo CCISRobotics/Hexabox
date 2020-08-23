@@ -59,7 +59,20 @@ Bot Pin 51
 
     void WalkForward()
     {
+        LegOne.raise();
+        LegTwo.raise();
+        delay(1000);
+        LegOne.forward();
+        LegTwo.forward();
+        delay(1000);
+        LegOne.restleg();
+        LegTwo.restleg();
+        delay(1000);
 
+        
+
+
+        
         
         
         

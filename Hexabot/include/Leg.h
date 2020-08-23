@@ -46,12 +46,16 @@ class leg
         WriteBot(90);
         WriteMid(90);
     }
-    
+
     //Moves the leg forward in a walking motion
     void forward()
     {
         WriteTop(125);
-        delay(1000);
+    }
+
+    void backward()
+    {
+        WriteBot(30);
     }
 
 
