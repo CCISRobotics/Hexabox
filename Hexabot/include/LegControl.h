@@ -60,16 +60,6 @@ Bot Pin 51
     void WalkForward()
     {
 
-        LegOne.PosMid = 180;
-        LegTwo.PosMid = 180;
-        LegOne.rewrite();
-        LegTwo.rewrite();
-        delay(30);
-        LegOne.PosBot = 0;
-        LegTwo.PosBot = 0;
-        LegOne.rewrite();
-        LegTwo.rewrite();
-        delay(30);
         
         
         

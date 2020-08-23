@@ -32,19 +32,29 @@ class leg
         top.write(90);
     }
 
+    //Raises the leg
+    void raise()
+    {
+        WriteMid(150);
+        delay(30);
+        WriteBot(30);
+        delay(1000);
+    }
+    //sets the leg to resting height(90 - 90 ; mid - bot)
+    void restleg()
+    {
+        WriteBot(90);
+        WriteMid(90);
+    }
+    
     //Moves the leg forward in a walking motion
     void forward()
     {
-        PosMid = 150;
-        mid.write(PosMid);
-        delay(30);
-        PosBot = 30;
-        bot.write(PosBot);
-        delay(130);
-        PosTop = 
-
-
+        WriteTop(125);
+        delay(1000);
     }
+
+
     //Reattaches each pin - useful incase you happen to change the pin. 
     void Reattach()
     {
@@ -60,6 +70,32 @@ class leg
         bot.write(PosBot);
     }
 
+    void WriteTop()
+    {
+        top.write(PosTop);
+    }
+    void WriteTop(int x)
+    {
+        top.write(x);
+    } 
+    
+    void WriteMid()
+    {
+        mid.write(PosMid);
+    }
+    void WriteMid(int x)
+    {
+        mid.write(x);
+    } 
+
+    void WriteBot()
+    {
+        bot.write(PosBot);
+    }
+    void WriteBot(int x)
+    {
+        bot.write(x);
+    }
     // Each servo has a corrosponding pin and position
     Servo top;
     int PinTop = 0;
