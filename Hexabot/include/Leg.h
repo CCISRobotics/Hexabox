@@ -31,6 +31,20 @@ class leg
         mid.write(90);
         top.write(90);
     }
+
+    //Moves the leg forward in a walking motion
+    void forward()
+    {
+        PosMid = 150;
+        mid.write(PosMid);
+        delay(30);
+        PosBot = 30;
+        bot.write(PosBot);
+        delay(130);
+        PosTop = 
+
+
+    }
     //Reattaches each pin - useful incase you happen to change the pin. 
     void Reattach()
     {
